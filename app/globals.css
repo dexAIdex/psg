@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes bounce-ball {
+  0% {
+    left: 0;
+    bottom: 0;
+    transform: rotate(0deg);
+  }
+  5% {
+    bottom: 80px;
+    transform: rotate(180deg);
+  }
+  10% {
+    left: 10vw;
+    bottom: 0;
+    transform: rotate(360deg);
+  }
+  15% {
+    bottom: 80px;
+    transform: rotate(540deg);
+  }
+  20% {
+    left: 20vw;
+    bottom: 0;
+    transform: rotate(720deg);
+  }
+  25% {
+    bottom: 80px;
+    transform: rotate(900deg);
+  }
+  30% {
+    left: 30vw;
+    bottom: 0;
+    transform: rotate(1080deg);
+  }
+  35% {
+    bottom: 80px;
+    transform: rotate(1260deg);
+  }
+  40% {
+    left: 40vw;
+    bottom: 0;
+    transform: rotate(1440deg);
+  }
+  45% {
+    bottom: 80px;
+    transform: rotate(1620deg);
+  }
+  50% {
+    left: 50vw;
+    bottom: 0;
+    transform: rotate(1800deg);
+  }
+  55% {
+    bottom: 80px;
+    transform: rotate(1980deg);
+  }
+  60% {
+    left: 60vw;
+    bottom: 0;
+    transform: rotate(2160deg);
+  }
+  65% {
+    bottom: 80px;
+    transform: rotate(2340deg);
+  }
+  70% {
+    left: 70vw;
+    bottom: 0;
+    transform: rotate(2520deg);
+  }
+  75% {
+    bottom: 80px;
+    transform: rotate(2700deg);
+  }
+  80% {
+    left: 80vw;
+    bottom: 0;
+    transform: rotate(2880deg);
+  }
+  85% {
+    bottom: 80px;
+    transform: rotate(3060deg);
+  }
+  90% {
+    left: 90vw;
+    bottom: 0;
+    transform: rotate(3240deg);
+  }
+  95% {
+    bottom: 80px;
+    transform: rotate(3420deg);
+  }
+  100% {
+    left: 100vw;
+    bottom: 0;
+    transform: rotate(3600deg);
+  }
+}
+
+.animate-bounce-ball {
+  animation: bounce-ball 8s ease-in-out infinite;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  z-index: 50;
+}
